@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+	  <InternalsVisibleTo Include="CadastroContatosTests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CadastroContatosApplication\CadastroContatosApplication.csproj" />
+    <ProjectReference Include="..\CadastroContatosDomain\CadastroContatosDomain.csproj" />
+    <ProjectReference Include="..\CadastroContatosInfrastructure\CadastroContatosInfrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="RegioesDDD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
