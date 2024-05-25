@@ -8,5 +8,7 @@ public class ApiError
     {
         ErrorMessage = errorMessage;
     }
+
+    public override string ToString() => ErrorMessage;
 }
 

@@ -43,7 +43,7 @@ public class ContatoPessoa
     public bool ContatoValido => NomeValido && EMailValido && TelefoneValido;
 
     [JsonIgnore]
-    public string DDD => Telefone.Split(' ').First();
+    public string DDD => Telefone?.Split(' ').First();
 
     public override string ToString() => $"nome:{Nome} tel:{Telefone} email:{EMail}";
 
