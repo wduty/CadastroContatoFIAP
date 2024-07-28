@@ -44,8 +44,11 @@ jobs:
     - name: Wait for MySQL to be ready
       run: docker-compose exec -T mysql sh -c 'until mysqladmin ping --silent; do echo "waiting for mysql"; sleep 2; done'
 
+    - name: Copy SQL Script into Container
+      run: docker cp CriacaoTabelas.sql $(docker-compose ps -q mysql):/CriacaoTabelas.sql
+
     - name: Create Database Schema
-      run: docker-compose exec -T mysql mysql -u fiap -pfiap contatos < /github/workspace/CriacaoTabelas.sql
+      run: docker-compose exec -T mysql mysql -u fiap -pfiap contatos < /CriacaoTabelas.sql
 
     - name: Run Unit Tests
       run: dotnet test CadastroContatosTestesUnitarios --no-build --verbosity normal
