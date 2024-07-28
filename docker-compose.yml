@@ -15,6 +15,12 @@ services:
       - mysql-data:/var/lib/mysql
       - ./InitializeDB.sql:/data/application/InitializeDB.sql
     command: --init-file /data/application/InitializeDB.sql
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
 
 volumes:
   mysql-data:
