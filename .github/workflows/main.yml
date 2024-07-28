@@ -48,6 +48,8 @@ jobs:
       run: dotnet test CadastroContatosTestesUnitarios --no-build --verbosity normal
 
     - name: Run Integration Tests
+      env:
+        ConnectionStrings__Contatos: "Server=localhost;Port=3306;Database=contatos;User=fiap;Password=fiap;"
       run: dotnet test CadastroContatosTests --no-build --verbosity normal
 
     - name: Shut down Docker Compose
