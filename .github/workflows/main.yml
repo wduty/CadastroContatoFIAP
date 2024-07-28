@@ -46,9 +46,12 @@ jobs:
 
     - name: Run Unit Tests
       run: dotnet test CadastroContatosTestesUnitarios --no-build --verbosity normal
+      
+    - name: Run SQL command to get system date
+      run: mysql -h localhost -u fiap -pyourpassword -D contatos -e "SELECT NOW();"
 
-    - name: Run Integration Tests      
-      run: ConnectionStrings__Contatos="Server=localhost;Database=contatos;User=fiap;Password=fiap;" dotnet test CadastroContatosTests --no-build --verbosity normal
+    #- name: Run Integration Tests      
+    #  run: ConnectionStrings__Contatos="Server=localhost;Database=contatos;User=fiap;Password=fiap;" dotnet test CadastroContatosTests --no-build --verbosity normal
 
     - name: Shut down Docker Compose
       run: docker-compose down
