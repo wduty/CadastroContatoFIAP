@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroContatosApi", "CadastroContatosApi\CadastroContatosApi.csproj", "{730E90B2-EEEA-4D05-B218-6292BACE794E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroContatosApi", "CadastroContatosApi\CadastroContatosApi.csproj", "{730E90B2-EEEA-4D05-B218-6292BACE794E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroContatosDomain", "CadastroContatosDomain\CadastroContatosDomain.csproj", "{20714FA6-ECE9-4FB1-88A9-8030CEEDF683}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroContatosDomain", "CadastroContatosDomain\CadastroContatosDomain.csproj", "{20714FA6-ECE9-4FB1-88A9-8030CEEDF683}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroContatosApplication", "CadastroContatosApplication\CadastroContatosApplication.csproj", "{D58F310F-B762-4673-820A-34CB6B6FFAAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroContatosApplication", "CadastroContatosApplication\CadastroContatosApplication.csproj", "{D58F310F-B762-4673-820A-34CB6B6FFAAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroContatosInfrastructure", "CadastroContatosInfrastructure\CadastroContatosInfrastructure.csproj", "{929FA9DD-10C0-4675-AFC0-DB11C1E3AE86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroContatosInfrastructure", "CadastroContatosInfrastructure\CadastroContatosInfrastructure.csproj", "{929FA9DD-10C0-4675-AFC0-DB11C1E3AE86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroContatosTests", "CadastroContatosTests\CadastroContatosTests.csproj", "{5ACCD8B0-3608-4A26-9F01-882ECC9EEA48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroContatosTests", "CadastroContatosTests\CadastroContatosTests.csproj", "{5ACCD8B0-3608-4A26-9F01-882ECC9EEA48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroContatosTestesUnitarios", "CadastroContatosTestesUnitarios\CadastroContatosTestesUnitarios.csproj", "{D1CEFA18-41C1-4544-B181-4B5CF19F244D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5ACCD8B0-3608-4A26-9F01-882ECC9EEA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5ACCD8B0-3608-4A26-9F01-882ECC9EEA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5ACCD8B0-3608-4A26-9F01-882ECC9EEA48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1CEFA18-41C1-4544-B181-4B5CF19F244D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1CEFA18-41C1-4544-B181-4B5CF19F244D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1CEFA18-41C1-4544-B181-4B5CF19F244D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1CEFA18-41C1-4544-B181-4B5CF19F244D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
