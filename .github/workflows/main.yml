@@ -45,7 +45,7 @@ jobs:
       run: docker-compose exec -T mysql sh -c 'until mysqladmin ping --silent; do echo "waiting for mysql"; sleep 2; done'
 
     - name: Create Database Schema
-      run: docker-compose exec -T mysql mysql -u fiap -pfiap contatos < /github/workspace/criação\ tabelas.sql
+      run: docker-compose exec -T mysql mysql -u fiap -pfiap contatos < /github/workspace/CriacaoTabelas.sql
 
     - name: Run Unit Tests
       run: dotnet test CadastroContatosTestesUnitarios --no-build --verbosity normal
